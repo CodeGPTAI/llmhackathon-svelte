@@ -1,104 +1,92 @@
-# Crea una app con la API de Mistral y Code GPT
+# Create an App with the Mistral API and Code GPT
 
-### Este proyecto implementa una aplicación de chat utilizando la API de Mistral y CodeGPT, desarrollada con Svelte.
-Desarrollado por [@GustavoEspindola – CodeGPT](https://www.linkedin.com/in/gustavoespindola/)
+### This project implements a chat application using the Mistral API and CodeGPT, developed with Svelte.
+Developed by [@GustavoEspindola – CodeGPT](https://www.linkedin.com/in/gustavoespindola/)
 
 <!-- add an image -->
 <img src="https://raw.githubusercontent.com/gustavoespindola/llmhackathon/refs/heads/master/static/hackathon.gif" alt="llmhackathon" width="100%">
 
-## Requisitos Previos
+## Prerequisites
 
-Para utilizar esta aplicación necesitarás:
+To use this application you will need:
 
-### Intro al proyecto
-- Solicitar el [Mistral API KEY](https://console.mistral.ai/api-keys/)
-- Prueba: Solicitar los modelos con una llamada a la API usando archivo .http en [Mistral Endpoints](https://docs.mistral.ai/api/#tag/models)
-- Crea una interacción con el modelo usando la aplicación de chat en Svelte
-### Agentes avanzados
-- Crear un Agente AI con CodeGPT
-- Carga la informacion al agente
-- Obten el id del agente
-- Obten la apikey CodeGPT
-- Crear una interacción con el agente usando la aplicación de chat en Svelte
+### Project Introduction
+- Request the [Mistral API KEY](https://console.mistral.ai/api-keys/)
+- Test: Request the models with an API call using a .http file in [Mistral Endpoints](https://docs.mistral.ai/api/#tag/models)
+- Create an interaction with the model using the chat application in Svelte
+### Advanced Agents
+- Create an AI Agent with CodeGPT
+- Load the information to the agent
+- Get the agent ID
+- Get the CodeGPT API key
+- Create an interaction with the agent using the chat application in Svelte
 
-### Enlaces de Interés
+### Useful Links
 
 - [🎯 LLMHackathon](https://llmhackathon.dev/)
-- [🔑 Documentación API Mistral](https://console.mistral.ai/api-keys/)
+- [🔑 Mistral API Documentation](https://console.mistral.ai/api-keys/)
 - [🎯 Mistral Endpoints](https://docs.mistral.ai/api/#tag/models)
-- [📚 SDK de Vercel AI](https://sdk.vercel.ai/)
-- [🚀 Registro en CodeGPT](app.codegpt.co/r/gustavo)
-- [📖 Documentación CodeGPT](https://app.codegpt.co/en/apikeys)
+- [📚 Vercel AI SDK](https://sdk.vercel.ai/)
+- [🚀 CodeGPT Registration](app.codegpt.co/r/gustavo)
+- [📖 CodeGPT Documentation](https://app.codegpt.co/en/apikeys)
 - [📖 CodeGPT Documentation](https://developers.codegpt.co/reference/completion-beta)
-- [🌐 Plataforma Vercel](https://vercel.com/)
-- [🔐 API OpenAI](https://platform.openai.com/api-keys)
+- [🌐 Vercel Platform](https://vercel.com/)
+- [🔐 OpenAI API](https://platform.openai.com/api-keys)
 
 ---
 
-## Instalación y Configuración
+## Installation and Configuration
 
-**Clonar el repositorio**
+**Clone the repository**
 
 `git clone https://github.com/gustavoespindola/llmhackathon`
 
-**Ingresar a la carpeta del proyecto**
+**Enter the project folder**
 
 `cd llmhackathon`
 
-
-**Instalar dependencias**
-Todo lo que necesitas para crear un proyecto Svelte, con la tecnología de [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-Una vez que hayas creado un proyecto e instalado dependencias con `npm install` (or `pnpm install` or `yarn`)
+**Install dependencies**
+Everything you need to create a Svelte project, with the technology of [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Once you have created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`)
 
 `npm install`
 
-
-**Iniciar el servidor de desarrollo**
+**Start the development server**
 
 ```bash
 npm run dev
 
-# o para abrir automáticamente en el navegador:
+# or to open automatically in the browser:
 npm run dev -- --open
 ```
 
-``` bash
+```bash
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
   ➜  press h + enter to show help
 ```
 
-La aplicación estará disponible en http://localhost:5173/
+The application will be available at `http://localhost:5173/`
 
----
+## Production Deployment
 
-## Despliegue en Producción
+Build Preparation
 
-Preparación del Build
-
-**Crear versión de producción**
-
+**Create production version**
 ```bash
 npm run build
-```
+npm run preview
+``
 
-**Previsualizar el build**
-``` bash
-  npm run preview
-```
+For deployment, you may need to install an adapter for the specific environment.
 
-> Para el despliegue, es posible que necesites instalar un [adapter](https://svelte.dev/docs/kit/adapters) para el entorno específico.
+**Deployment on Vercel**
 
+Create an account on Vercel
+Create a new project
+Link with the repository
+Configure environment variables
+Execute the deployment
 
-**Despliegue en Vercel**
-
-1. Crear cuenta en Vercel
-2. Crear nuevo proyecto
-3. Vincular con el repositorio
-4. Configurar variables de entorno
-5. Ejecutar el despliegue
-
----
 **Mas información sobre Vercel**
-
 [Deploy Tutorial](https://vercel.com/docs/deployments/overview)
