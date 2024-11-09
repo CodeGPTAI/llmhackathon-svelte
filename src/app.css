@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+	font-family: 'DM_Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local(''), format('woff'), url('./fonts/DM_Sans/DMSans_18pt-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'DM_Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: local(''), format('woff'), url('./fonts/DM_Sans/DMSans_18pt-Bold.ttf');
+}
+
+html {
+	font-family: 'DM_Sans', sans-serif;
+	font-size: 20px;
+	@apply subpixel-antialiased font-normal leading-snug;
+}
+
+/* fade In from bottom */
+@keyframes fadeInFromBottom {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in-from-bottom {
+	animation: fadeInFromBottom 0.3s ease-in-out;
+}
